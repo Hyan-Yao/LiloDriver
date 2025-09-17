@@ -107,12 +107,11 @@ LiLoDriver outperforms existing rule-based and learning-based planners across ra
 If you find this work helpful, please cite us:
 
 ```bibtex
-@article{LiLoDriver2024,
-  title   = {LiLoDriver: A Lifelong Learning Framework for Closed-Loop Motion Planning in Long-tail Autonomous Driving Scenarios},
-  author  = {Your Name and Others},
-  journal = {ArXiv preprint},
-  year    = {2024},
-  url     = {https://github.com/your-org/LiLoDriver}
+@article{yao2025lilodriver,
+  title={LiloDriver: A Lifelong Learning Framework for Closed-loop Motion Planning in Long-tail Autonomous Driving Scenarios},
+  author={Yao, Huaiyuan and Li, Pengfei and Jin, Bu and Zheng, Yupeng and Liu, An and Mu, Lisen and Su, Qing and Zhang, Qian and Chen, Yilun and Li, Peng},
+  journal={arXiv preprint arXiv:2505.17209},
+  year={2025}
 }
 ```
 
