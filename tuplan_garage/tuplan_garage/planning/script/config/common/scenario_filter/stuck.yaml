@@ -1,0 +1,56 @@
+_target_: nuplan.planning.scenario_builder.scenario_filter.ScenarioFilter
+_convert_: all
+scenario_types:
+  - behind_long_vehicle
+  - changing_lane
+  - following_lane_with_lead
+  - high_lateral_acceleration
+  - high_magnitude_speed
+  - low_magnitude_speed
+  - near_multiple_vehicles
+  - starting_left_turn
+  - starting_right_turn
+  - starting_straight_traffic_light_intersection_traversal
+  - stationary_in_traffic
+  - stopping_with_lead
+  - traversing_pickup_dropoff
+  - waiting_for_pedestrian_to_cross
+
+scenario_tokens:
+  - b8fc7d499e705b68
+  - a36c1b943871552a
+  - "840f360aea765a57"
+  - c921e9258bdf5c0c
+  - "0681f7fa37dd5f63"
+  - "35c3787707ce5deb"
+  - d8834251f07a597f
+  - "13f3028945475a79"
+  - b703d99845f45666
+  - "75025613e3935595"
+  - "88a42c466d2b5ebd"
+  - c136ba64909b5ffe
+  - a3b20f60c7835df8
+  - "6ff0d0bb90d852b9"
+  - "2cf6ac2d997a5dff"
+  - "35265fcdd0be5579"
+  - "0cd6cff135c25fa9"
+  - "69e91c91e4e65848"
+  - "698b38a35cc95956"
+  - db363d844b3754f1
+  - f9ac8947d2c55c1b
+  - ba267dbeb0c853b5
+  - "32aea40a777c5156"
+  - "ae6e6bd7567d56bc"
+
+log_names: null
+map_names: null
+num_scenarios_per_type: null
+limit_total_scenarios: null
+timestamp_threshold_s: 15
+ego_displacement_minimum_m: null
+ego_start_speed_threshold: null
+ego_stop_speed_threshold: null
+speed_noise_tolerance: null
+expand_scenarios: null
+remove_invalid_goals: true
+shuffle: false

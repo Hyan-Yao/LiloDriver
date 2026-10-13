@@ -1,0 +1,15 @@
+# nuplan-devkit v1.2.2 and tuplan_garage are installed separately (see README)
+torch>=1.12
+numpy
+pandas
+pyyaml
+tqdm
+scikit-learn>=1.2
+chromadb>=0.4
+shared-memory-dict
+tensorboardX
+transformers>=4.30
+accelerate
+sentencepiece
+flask
+requests

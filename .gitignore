@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.vscode/
+.DS_Store
+ckpt/
+log/
+*.pth
+*.ckpt
+*.npz
+*.npy

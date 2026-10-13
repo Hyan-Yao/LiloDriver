@@ -1,0 +1,12 @@
+llm_planner:
+  _target_: tuplan_garage.planning.simulation.planner.llm_planner.llm_planner
+  _convert_: 'all'
+
+  map_radius: 50 # Radius to consider around ego [m]
+  memory_path: ${oc.env:LILO_MEMORY_PATH} # memory built by driving_memory.py
+  selector: llm # llm (LiloDriver) / greedy (non-LLM selector) / none (fixed fallback, no memory)
+  embedding: encoder # encoder (Scene Encoder service) / flat (flattened perception features)
+  top_k: 3 # retrieved examples K_r
+  llm_period: 15.0 # LLM query period T_LLM [s]
+  llm_url: http://127.0.0.1:5000/predict
+  selection_log: null

@@ -1,0 +1,32 @@
+grid_planner:
+  _convert_: all
+  _target_: tuplan_garage.planning.simulation.planner.pdm_planner.grid_planner.PDMClosedPlanner
+  idm_policies:
+    _convert_: all
+    _target_: tuplan_garage.planning.simulation.planner.pdm_planner.proposal.batch_idm_policy.BatchIDMPolicy
+    accel_max: 5.0
+    decel_max: 4.0
+    fallback_target_velocity: 15.0
+    headway_time: 3.0
+    min_gap_to_lead_agent: 3.0
+    speed_limit_fraction:
+    - 0.2
+    - 0.4
+    - 0.6
+    - 0.8
+    - 1.0
+  lateral_offsets:
+  - -1.5
+  - 1.5
+  map_radius: 50
+  proposal_sampling:
+    _convert_: all
+    _target_: nuplan.planning.simulation.trajectory.trajectory_sampling.TrajectorySampling
+    interval_length: 0.1
+    num_poses: 40
+  trajectory_sampling:
+    _convert_: all
+    _target_: nuplan.planning.simulation.trajectory.trajectory_sampling.TrajectorySampling
+    interval_length: 0.1
+    num_poses: 80
+  ttc_threshold: 5.0
